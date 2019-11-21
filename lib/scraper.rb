@@ -8,4 +8,4 @@ change_things = doc.css(".headline-26OIBN").text
 
 course_names = doc.css(".text-4GLMvr .title-oE5vT4")
 
-p course_names[3].text
+p course_names[4].text
