@@ -8,4 +8,6 @@ change_things = doc.css(".headline-26OIBN").text
 
 course_names = doc.css(".text-4GLMvr .title-oE5vT4")
 
-p course_names[4].text
+sliced = course_names.slice(0,3)
+
+p sliced.text
