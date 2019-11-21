@@ -6,8 +6,11 @@ html = open("https://flatironschool.com/")
 doc = Nokogiri::HTML(html)
 change_things = doc.css(".headline-26OIBN").text
 
-course_names = doc.css(".text-4GLMvr .title-oE5vT4")
+text_about_courses = doc.css(".text-4GLMvr .title-oE5vT4")
 
-sliced = course_names.slice(0..3)
+course_names = text_about_courses.slice(0..3)
 
-p sliced.text
+course_names.each_with_index do |course, index|
+  puts "#{index+1}. #{course.text}" 
+  end 
+
